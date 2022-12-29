@@ -1,0 +1,17 @@
+@import './app.css';
+ 
+:root{
+   --blue: #43DDE6;
+}
+ 
+ 
+html, body {
+   margin: 0;
+   padding: 0;
+}
+ 
+.wrapper{
+   max-inline-size: 56.25rem;
+   inline-size: 100%;
+   margin: auto;
+}
