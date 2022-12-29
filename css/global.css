@@ -1,17 +1,21 @@
 @import './app.css';
+@import './controls.css';
  
 :root{
    --blue: #43DDE6;
+   --white10: #EDF5FC;
 }
  
  
 html, body {
    margin: 0;
    padding: 0;
+   font-family: 'Lato', sans-serif;
 }
  
 .wrapper{
    max-inline-size: 56.25rem;
    inline-size: 100%;
    margin: auto;
+   position: relative;
 }
