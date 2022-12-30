@@ -5,22 +5,31 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/global.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
    <title>Video Player</title>
 </head>
 <body>
    <section id="app" class="app">
       <div class="wrapper">
-        <video id="video" data-play="false" class="video">
+        <div class="controls">
+            <div class="titleVideo"> <h5> Intro Pokemon Indigo League - Audio Latino  </h5></div>
+            <div class="buttonsContainer">
+                <button id="back" class="button back"><i class="icon-icon_back"></i></button>
+                <button id="play" class="button playStop"><i class="icon-icon_play"></i></button>
+                <button id="forward" class="button forward"><i class="icon-icon_forward"></i></button>
+            </div>
+            <div class="containerProgressbar">
+                <input class="progressbar" type="range" name="range" id="progress" min="0" max="0" step="1" data-time="0">
+            </div>
+        </div>
+        <video id="video" data-play="false" class="video" poster="./images/wp3735773.jpg">
             <source src="./video/pokemon.mp4" type="video/mp4">
         </video>
       </div>
    </section>
-   <div>
-    <button id="back">Retroceder</button>
-    <button id="play">Play</button>
-    <button id="forward">Adelantar</button>
-    <input type="range" name="range" id="progress" min="0" max="0" step="1" data-time="0">
-</div>
+ 
  
 
    <script src="./js/index.js"></script>

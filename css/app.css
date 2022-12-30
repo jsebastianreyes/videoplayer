@@ -37,6 +37,12 @@
     inline-size: 100%;
     aspect-ratio: 16/9;
     vertical-align: middle;
+    position: relative;
+    z-index: 1;
   
  }
  
+
+ .video[poster]{
+  object-fit: cover;
+   }
