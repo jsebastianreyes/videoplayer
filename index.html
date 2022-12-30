@@ -16,12 +16,12 @@
         <div class="controls">
             <div class="titleVideo"> <h5> Intro Pokemon Indigo League - Audio Latino  </h5></div>
             <div class="buttonsContainer">
-                <button id="back">Retroceder</button>
-                <button id="play">Play</button>
-                <button id="forward">Adelantar</button>
+                <button id="back" class="button back"><i class="icon-icon_back"></i></button>
+                <button id="play" class="button playStop"><i class="icon-icon_play"></i></button>
+                <button id="forward" class="button forward"><i class="icon-icon_forward"></i></button>
             </div>
-            <div>
-                <input type="range" name="range" id="progress" min="0" max="0" step="1" data-time="0">
+            <div class="containerProgressbar">
+                <input class="progressbar" type="range" name="range" id="progress" min="0" max="0" step="1" data-time="0">
             </div>
         </div>
         <video id="video" data-play="false" class="video" poster="./images/wp3735773.jpg">

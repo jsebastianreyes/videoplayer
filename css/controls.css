@@ -1,5 +1,5 @@
 .controls{
-    background: rgba(0,0,0, 0.3 );
+    background: rgba(0,0,0, 0.2 );
     inline-size: 100%;
     aspect-ratio: 16/9;
     position: absolute;
@@ -9,11 +9,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .controls button, .controls input{
     position: relative;
-    z-index: 99;
+    z-index: 3;
 }
 
 .buttonsContainer{
@@ -30,3 +31,46 @@
 .titleVideo h5{
     margin: 0;
 }
+
+.button{
+  background: transparent;
+  border: 0;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+} 
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.button:active{
+    transform: scale(.9);
+}
+
+
+.progressbar[type='range'] {
+    inline-size: 100%;
+    overflow: hidden;
+    appearance: none;
+    block-size: .25rem;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+
+}
+
+.progressbar[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    color: #237CCE;
+}
+
+.progressbar[type='range']::-webkit-slider-thumb {
+    width: 0px;
+    -webkit-appearance: none;
+    height: 0;
+    cursor: pointer;
+    background: #434343;
+    border-radius: 100%;
+    box-shadow: -450px 0 0 450px  #237CCE;
+}
+

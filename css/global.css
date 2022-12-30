@@ -1,5 +1,6 @@
 @import './app.css';
 @import './controls.css';
+@import './icons.css';
  
 :root{
    --blue: #43DDE6;
@@ -18,4 +19,5 @@ html, body {
    inline-size: 100%;
    margin: auto;
    position: relative;
+   
 }
