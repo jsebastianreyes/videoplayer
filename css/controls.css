@@ -53,9 +53,10 @@
     inline-size: 100%;
     overflow: hidden;
     appearance: none;
-    block-size: .25rem;
+    block-size: .33rem;
     border-radius: .25rem;
     -webkit-appearance: none;
+    cursor: pointer;
 
 }
 
