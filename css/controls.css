@@ -1,0 +1,77 @@
+.controls{
+    background: rgba(0,0,0, 0.2 );
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    position: absolute;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem 1.875rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.controls button, .controls input{
+    position: relative;
+    z-index: 3;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.titleVideo{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--white10);
+}
+
+.titleVideo h5{
+    margin: 0;
+}
+
+.button{
+  background: transparent;
+  border: 0;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+} 
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+.button:active{
+    transform: scale(.9);
+}
+
+
+.progressbar[type='range'] {
+    inline-size: 100%;
+    overflow: hidden;
+    appearance: none;
+    block-size: .33rem;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+}
+
+.progressbar[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    color: #237CCE;
+}
+
+.progressbar[type='range']::-webkit-slider-thumb {
+    width: 0px;
+    -webkit-appearance: none;
+    height: 0;
+    cursor: pointer;
+    background: #434343;
+    border-radius: 100%;
+    box-shadow: -450px 0 0 450px  #237CCE;
+}
+
