@@ -19,5 +19,10 @@ html, body {
    inline-size: 100%;
    margin: auto;
    position: relative;
+   /* padding-inline: 1rem; */
    
+}
+
+.app{
+   padding-inline: 1rem;
 }
