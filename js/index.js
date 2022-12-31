@@ -8,14 +8,18 @@ const $btnBack = document.querySelector('#back')
 const $progress = document.querySelector('#progress')
 const status = $video.dataset.play
 
+const elements = [$btnBack, $progress, $btnForward]
+
 async function playAndPause(e){
   if($video.dataset.play === 'false'){
+    elements.map(el => el.style.visibility = "visible")
     e.target.className = "icon-icons_pause";
     $video.dataset.play = 'true'
     $video.play()
     const time = await timeUpdate()
   }
   else{
+    elements.map(el => el.style.visibility = "hidden")
     e.target.className = "icon-icon_play";
     $video.dataset.play = 'false'
     $video.pause()
