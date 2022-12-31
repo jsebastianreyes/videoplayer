@@ -36,8 +36,8 @@
     outline: 0;
     touch-action: none;
     font-size: 1.85rem;
-    block-size: 2.1rem;
-    inline-size: 2.1rem;
+    block-size: 2.2rem;
+    inline-size: 2.2rem;
 }
 
 .titleVideo h5{
@@ -51,7 +51,6 @@
   cursor: pointer;
   outline: none;
   position: relative;
-  overflow: hidden;
 } 
 
 
