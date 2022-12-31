@@ -1,6 +1,7 @@
 //Funcionalidad Botones 
 
 const $video = document.querySelector('#video')
+$video.removeAttribute('controls')
 const $play = document.querySelector('#play')
 const $btnForward = document.querySelector('#forward')
 const $btnBack = document.querySelector('#back')
@@ -9,11 +10,13 @@ const status = $video.dataset.play
 
 async function playAndPause(e){
   if($video.dataset.play === 'false'){
+    e.target.className = "icon-icons_pause";
     $video.dataset.play = 'true'
     $video.play()
     const time = await timeUpdate()
   }
   else{
+    e.target.className = "icon-icon_play";
     $video.dataset.play = 'false'
     $video.pause()
   }
