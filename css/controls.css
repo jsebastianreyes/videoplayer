@@ -35,7 +35,7 @@
 .button i{
     outline: 0;
     touch-action: none;
-    font-size: 2rem;
+    font-size: 1.85rem;
     block-size: 2.1rem;
     inline-size: 2.1rem;
 }
