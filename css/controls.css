@@ -20,9 +20,10 @@
 .buttonsContainer{
     display: flex;
     justify-content: center;
-    inline-size: 6.75rem;
+    inline-size: 7.75rem;
     margin: auto;
-    border: 3px solid blue;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .titleVideo{
@@ -34,7 +35,9 @@
 .button i{
     outline: 0;
     touch-action: none;
-    border: 1px solid orange;
+    font-size: 2rem;
+    block-size: 2.1rem;
+    inline-size: 2.1rem;
 }
 
 .titleVideo h5{
@@ -42,14 +45,15 @@
 }
 
 .button{
-    border: 2px solid black;
   background: transparent;
   border: 0;
-  font-size: 2.2rem;
   color: white;
   cursor: pointer;
   outline: none;
+  position: relative;
+  overflow: hidden;
 } 
+
 
 .button:hover{
     transform: scale(1.1);
