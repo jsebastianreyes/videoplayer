@@ -24,6 +24,7 @@
     margin: auto;
     position: relative;
     box-sizing: border-box;
+    gap: .5rem;
 }
 
 .titleVideo{
@@ -35,9 +36,11 @@
 .button i{
     outline: 0;
     touch-action: none;
-    font-size: 1.85rem;
-    block-size: 2.2rem;
-    inline-size: 2.2rem;
+    font-size: 2rem;
+    block-size: 2rem;
+    inline-size: 2rem;
+    /* border: 3px solid red */
+    ;
 }
 
 .titleVideo h5{
@@ -45,6 +48,7 @@
 }
 
 .button{
+  padding-inline: 0;
   background: transparent;
   border: 0;
   color: white;
