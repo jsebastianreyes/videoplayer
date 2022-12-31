@@ -20,6 +20,8 @@
 .buttonsContainer{
     display: flex;
     justify-content: center;
+    inline-size: 6.75rem;
+    margin: auto;
 }
 
 .titleVideo{
@@ -81,6 +83,9 @@
     box-shadow: -450px 0 0 450px  #237CCE;
 }
 
+.back, .forward, .progressbar {
+    visibility: hidden;
+}
 
 
 @media  screen and (min-width: 768px) {
