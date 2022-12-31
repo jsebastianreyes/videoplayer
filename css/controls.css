@@ -24,8 +24,13 @@
 
 .titleVideo{
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--white10);
+}
+
+.button i{
+    outline: 0;
+    touch-action: none;
 }
 
 .titleVideo h5{
@@ -76,3 +81,10 @@
     box-shadow: -450px 0 0 450px  #237CCE;
 }
 
+
+
+@media  screen and (min-width: 768px) {
+    .titleVideo{
+        font-size: 1.2rem;
+    }   
+}

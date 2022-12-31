@@ -59,3 +59,4 @@ $btnBack.addEventListener('click', async ()=> {
 })
 
 $play.addEventListener('click', playAndPause)
+
